@@ -15,7 +15,7 @@ import com.kpit.bfs.repository.UsersRepository;
  *
  */
 @Service
-public class UsersService implements IUserService{
+public class UserService implements IUserService{
 	
 	@Autowired
 	private UsersRepository repo;

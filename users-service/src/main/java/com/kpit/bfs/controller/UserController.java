@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.kpit.bfs.model.Users;
-import com.kpit.bfs.service.UsersService;
+import com.kpit.bfs.service.UserService;
 
 @RestController
 @RequestMapping("/users")
@@ -21,7 +21,7 @@ public class UserController {
 	private Environment env;
 	
 	@Autowired
-	private UsersService service;
+	private UserService service;
 	
 	@GetMapping("/status/check")
 	public String getStatus() {
